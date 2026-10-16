@@ -1,0 +1,44 @@
+[
+  {
+    "file": "fno_training/results/train_20260924_113257_358844_8e2e9296/last.pt",
+    "original_sha256": "d6d66bd06e0b8e3cb90986e76a055641768f2cfceb447d84771e7a63c6d7e2c5",
+    "release_sha256": "2e118dc23c784ae890099315db983903929fc4af8f40f2b9c29871cb959dcca7",
+    "weights_and_physical_metadata_unchanged": true,
+    "change": "Redacted environment.python_executable; reserialized trusted checkpoint."
+  },
+  {
+    "file": "fno_training/results/train_20260924_113257_358844_8e2e9296/best.pt",
+    "original_sha256": "66b6c4bc9e596c7dc717e30baad34997551f0a89fdb2d37ab639a6bef066ff12",
+    "release_sha256": "cea93d56d5056ce5742edfceb83c6d7b34b33ff0dac139e2914bea66e287e5ec",
+    "weights_and_physical_metadata_unchanged": true,
+    "change": "Redacted environment.python_executable; reserialized trusted checkpoint."
+  },
+  {
+    "file": "fno_training/controlled_finetune/runs/finetune_B_20260924_135030_103509_3b9c7385/last.pt",
+    "original_sha256": "81cefcf3090af32c0a542793a81e1acd3df240c5764f6efc76bcbc7efabea96e",
+    "release_sha256": "1d7321343655e2a3efe200a35d5963419d9bf2d91a50f678c2a0e7e12fdd7c24",
+    "weights_and_physical_metadata_unchanged": true,
+    "change": "Redacted environment.python_executable; reserialized trusted checkpoint."
+  },
+  {
+    "file": "fno_training/controlled_finetune/runs/finetune_B_20260924_135030_103509_3b9c7385/best.pt",
+    "original_sha256": "b535ceb7b7c22be3303668fe7d674c9bada177a4ac70d006766be0cdc0b12a7c",
+    "release_sha256": "6b43ab1f1001c8a8cb98d91a9f8b48bd406c9fe113710287e45cfcb2a5088405",
+    "weights_and_physical_metadata_unchanged": true,
+    "change": "Redacted environment.python_executable; reserialized trusted checkpoint."
+  },
+  {
+    "file": "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/last.pt",
+    "original_sha256": "01fedb23854fee8b3b444007c4ea062ec795b055c81efb5319aed8c48b081424",
+    "release_sha256": "3d8a05804f3bbebed0a0ae26b388f30081d72e546cb5c009adfd8ac54defbae7",
+    "weights_and_physical_metadata_unchanged": true,
+    "change": "Redacted environment.python_executable; reserialized trusted checkpoint."
+  },
+  {
+    "file": "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/best.pt",
+    "original_sha256": "f7ddd5f2517487935441aa1dd50e8a465212a7e4ca21ee3e17cf09f155f504f9",
+    "release_sha256": "79ce920875f116020a1801b5ecc1ea4e647f5c02a3dd2e57e87de3599e8b7205",
+    "weights_and_physical_metadata_unchanged": true,
+    "change": "Redacted environment.python_executable; reserialized trusted checkpoint."
+  }
+]

@@ -1,0 +1,30 @@
+--- original/src/cole_cole.cpp
++++ acceptance/src/cole_cole.cpp
+@@ -1620,6 +1620,27 @@
+     if (cfg.sourceFree) {
+         if (cfg.initialMethod != "l2" || t != 0)
+             throw std::runtime_error("source-free initial data require L2 projection at t=0");
++        if (cfg.useInitialModalCoefficients) {
++            const std::size_t count = static_cast<std::size_t>(mesh.N*basis.dim);
++            if (cfg.initialModalCoefficients.size() != 3*count)
++                throw std::runtime_error("complete initial DG coefficient count mismatch");
++            InitialModal initial;
++            initial.E = Matrix(mesh.N, basis.dim);
++            initial.H = Matrix(mesh.N, basis.dim);
++            initial.P = Matrix(mesh.N, basis.dim);
++            Matrix* fields[] = {&initial.E, &initial.H, &initial.P};
++            for (std::size_t field=0; field<3; ++field) {
++                for (std::size_t i=0; i<count; ++i) {
++                    const Real value = cfg.initialModalCoefficients[field*count+i];
++                    if (!std::isfinite(value))
++                        throw std::runtime_error("non-finite initial DG coefficient");
++                    if (field == 2 && value != 0)
++                        throw std::runtime_error("acceptance protocol requires P0=0");
++                    fields[field]->a[i] = value;
++                }
++            }
++            return initial;
++        }
+         const Real length = cfg.xb-cfg.xa;
+         auto electric = [&](const Real& x) {
+             Real value=0;

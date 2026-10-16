@@ -1,0 +1,52 @@
+{
+  "checkpoint_sha256": "f7ddd5f2517487935441aa1dd50e8a465212a7e4ca21ee3e17cf09f155f504f9",
+  "epoch": 176,
+  "fine_tune_step": 4224,
+  "source_epoch": 2478,
+  "model_config": {
+    "in_channels": 5,
+    "out_channels": 3,
+    "hidden_channels": 32,
+    "n_layers": 4,
+    "n_modes": [
+      16
+    ],
+    "positional_embedding": null,
+    "factorization": null,
+    "norm": null,
+    "activation": "gelu",
+    "precision": "float32",
+    "domain_padding": 0.125,
+    "use_channel_mlp": true,
+    "channel_mlp_expansion": 0.5,
+    "channel_mlp_dropout": 0.0,
+    "channel_mlp_skip": "soft-gating",
+    "fno_skip": "linear",
+    "lifting_channel_ratio": 2,
+    "projection_channel_ratio": 2,
+    "implementation": "reconstructed",
+    "fno_block_precision": "full"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "python_executable": "<PROJECT_ROOT>/fno_training/.venv/bin/python",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.8.0",
+      "neuraloperator": "2.0.0",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "tensorly": "0.9.0",
+      "tensorly-torch": "0.5.0"
+    },
+    "selected_device": "cpu",
+    "mps_fallback_environment": "unset"
+  },
+  "intraop_threads": 1,
+  "interop_threads": 1,
+  "dtype": "float32",
+  "device": "cpu",
+  "answer_cache": false,
+  "cold_scope": "checkpoint read + strict original model construction/load + first end-to-end call; dependency imports/hash checks/process startup excluded; OS file cache uncontrolled"
+}

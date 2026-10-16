@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "experiment_name": "frozen2478_loss_pair_v1",
+  "project_config": "../config.json",
+  "expected_project_config_sha256": "ad556f804f1c4c72c0f9a40d86a051bc32e6e7e40a0b3daa7e792486d358f9df",
+  "source_checkpoint": "../results/train_20260924_113257_358844_8e2e9296/best.pt",
+  "source_checkpoint_sha256": "cea93d56d5056ce5742edfceb83c6d7b34b33ff0dac139e2914bea66e287e5ec",
+  "source_epoch": 2478,
+  "expected_model_config": {
+    "in_channels": 5,
+    "out_channels": 3,
+    "hidden_channels": 32,
+    "n_layers": 4,
+    "n_modes": [
+      16
+    ],
+    "positional_embedding": null,
+    "factorization": null,
+    "norm": null,
+    "activation": "gelu",
+    "precision": "float32",
+    "domain_padding": 0.125,
+    "use_channel_mlp": true,
+    "channel_mlp_expansion": 0.5,
+    "channel_mlp_dropout": 0.0,
+    "channel_mlp_skip": "soft-gating",
+    "fno_skip": "linear",
+    "lifting_channel_ratio": 2,
+    "projection_channel_ratio": 2,
+    "implementation": "reconstructed",
+    "fno_block_precision": "full"
+  },
+  "expected_data_fingerprints": {
+    "raw_sha256": "a0bc9598eb028ff63c3eceafd5ebefb956591849c654257b2caebc00f3e24f96",
+    "split_sha256": "87216c68529b4918875c9762e4db4a5fdc9e95cca7e7a21104d97ef522b6d373",
+    "raw_config_sha256": "d558519ca566bb0935dda062a2006e821d09020116ca2ece3a26af43a558f834",
+    "prepared_sha256": "09002c12d20df7c8538d78229daac6fb6c8d7f2866bb395698efce0c98fe87b9",
+    "normalizer_sha256": "1622606f591e468c439c44bf40ec68ea4869404ea2aba7fb71351b382cb94dc9"
+  },
+  "expected_original_sources": {
+    "model.py": "3e991e9a154d12cb8d616bdbf8e5cc804d97203f689ce905bc7670900e4ee99a",
+    "data.py": "e64d01c36c26196dc8884f31a34f0689703613c051d91b9ff308cd7d357018c3",
+    "utils.py": "c8afbfc9defb20908cb344486c4f3b09566681dba842e033a2318f89d9a39ef4"
+  },
+  "training": {
+    "device": "cpu",
+    "batch_size": 16,
+    "num_workers": 0,
+    "seed": 42,
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "schedule": "cosine_by_update",
+    "min_learning_rate": 1e-06,
+    "max_updates": 4800,
+    "validation_every_updates": 24,
+    "early_stopping": false,
+    "reset_optimizer": true,
+    "reset_scheduler": true
+  },
+  "loss": {
+    "lambda": 0.5,
+    "delta": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "delta_space": "normalized_output_rms",
+    "delta_origin": "predeclared_trial_not_optimized"
+  },
+  "comparison": {
+    "primary": "macro_mean_relative_l2",
+    "mode": "min",
+    "relative_norm_threshold": 1e-10,
+    "undefined_policy": "fail_if_any_validation_relative_undefined",
+    "checkpoint_selection": "same_primary_including_step_zero",
+    "absolute_review": "report_each_field_mean_p95_max_and_flag_any_increase",
+    "joint_relative_threshold": 0.01,
+    "use_test": false
+  },
+  "expected_counts": {
+    "train": 384,
+    "validation": 64
+  },
+  "output_root": "runs",
+  "variant": "B",
+  "objective": "mixed",
+  "peer_config": "config_A_mse.json"
+}

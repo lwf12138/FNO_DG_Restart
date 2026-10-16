@@ -1,0 +1,31 @@
+# Local environments and generated files
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+build/
+cache/
+.matplotlib_cache/
+/logs/
+/runs/
+/outputs/
+/checks/
+/fno_acceptance_v1/artifacts/
+# Retain only the selected historical experiments, not future generated runs.
+/fno_training/results/*
+!/fno_training/results/train_20260924_113257_358844_8e2e9296/
+!/fno_training/results/evaluation_20260924_121035_309867_aaeaad79/
+!/fno_training/results/evaluation_20260924_123022_696930_2e7cbd94/
+/fno_training/controlled_finetune/runs/*
+!/fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/
+!/fno_training/controlled_finetune/runs/finetune_B_20260924_135030_103509_3b9c7385/
+/fno_training/controlled_finetune/comparisons/*
+!/fno_training/controlled_finetune/comparisons/comparison_20260924_135800_625457_b5d819/

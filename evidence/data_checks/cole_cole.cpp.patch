@@ -1,0 +1,39 @@
+--- base_double/src/cole_cole.cpp
++++ src/cole_cole.cpp
+@@ -1617,6 +1617,28 @@
+ 
+ InitialModal initial_modal(const Mesh& mesh, const Basis& basis, const Quad& quad,
+                            const Config& cfg, const Exact& exact, const Real& t) {
++    if (cfg.sourceFree) {
++        if (cfg.initialMethod != "l2" || t != 0)
++            throw std::runtime_error("source-free initial data require L2 projection at t=0");
++        const Real length = cfg.xb-cfg.xa;
++        auto electric = [&](const Real& x) {
++            Real value=0;
++            for (std::size_t m=0;m<cfg.initialElectricCoeffs.size();++m)
++                value += cfg.initialElectricCoeffs[m]*sin(Real(m+1)*pi()*(x-cfg.xa)/length);
++            return value;
++        };
++        auto magnetic = [&](const Real& x) {
++            Real value=0;
++            for (std::size_t m=0;m<cfg.initialMagneticCoeffs.size();++m)
++                value += cfg.initialMagneticCoeffs[m]*cos(Real(m+1)*pi()*(x-cfg.xa)/length);
++            return value;
++        };
++        InitialModal initial;
++        initial.E = project_l2_func(mesh,basis,quad,electric);
++        initial.H = project_l2_func(mesh,basis,quad,magnetic);
++        initial.P = Matrix(mesh.N,basis.dim);
++        return initial;
++    }
+     Matrix Estar, Hstar;
+     project_star_maxwell(mesh, basis, quad, cfg, exact, t, 0, Estar, Hstar);
+     Matrix Ppi = project_l2_func(mesh, basis, quad, [&](const Real& x) { return exact.P(x, t); });
+@@ -2277,6 +2299,7 @@
+         Vec FEstage(static_cast<std::size_t>(s), 0);
+         Vec FHstage(static_cast<std::size_t>(s), 0);
+         for (int stage = 0; stage < s; ++stage) {
++            if (cfg.sourceFree) continue; // Both source vectors remain exactly zero.
+             Real ts = tn + rk.c[stage]*dt;
+             FEstage[stage] = cfg.epsilon0*cfg.epsilon_inf*exact.gd(ts, 1)
+                 + exact.r(ts) + exact.A*exact.qd(ts);

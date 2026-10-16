@@ -1,0 +1,5 @@
+{
+  "checkpoint": "<PROJECT_ROOT>/fno_training/results/train_20260924_113225_521125_7739084b/last.pt",
+  "sha256": "3a82c8426ec749a50e4053012bfd1f1806456b4e387ea1fab73d07286747f525",
+  "next_epoch": 26
+}

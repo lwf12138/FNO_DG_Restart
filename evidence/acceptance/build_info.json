@@ -1,0 +1,37 @@
+{
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "<PROJECT_ROOT>/fno_acceptance_v1/reference_solver",
+      "-B",
+      "<PROJECT_ROOT>/fno_acceptance_v1/reference_solver/build",
+      "-DCMAKE_BUILD_TYPE=Release"
+    ],
+    [
+      "cmake",
+      "--build",
+      "<PROJECT_ROOT>/fno_acceptance_v1/reference_solver/build",
+      "--parallel",
+      "1"
+    ]
+  ],
+  "source_sha256": {
+    "CMakeLists.txt": "f30b905390fbdd225910f9c5ebe4bdcc1894d27d1a6bad53714927d7fad56b6d",
+    "include/cole_cole.hpp": "e8f0b0858851d23685f3d912b126dc4b2b9171bd3644c56f36fd5448f3927020",
+    "original/CMakeLists.txt": "a94bb609951ba76d69e01ffe9ffde5a48b24d46b65917021d4f85f0f565576dc",
+    "original/include/cole_cole.hpp": "848b8993027575e9b34ea9cfcbdee8511c78e56d90a93e7b0a35ff769f2569ff",
+    "original/src/cole_cole.cpp": "12d000f4a2edbb5ee5fb6cbc781148c7d78a9d37376b3ab5516915329133b309",
+    "original/src/dataset_driver.cpp": "836dc69d3d2ce4830f6f362c0e528b6cbe6f81863b9348ea8fc53d1241d90555",
+    "src/acceptance_driver.cpp": "07e0776681662744aa8db56c717c12e1e6c0abb79c1eb9e43c54ebe6727a3c4d",
+    "src/cole_cole.cpp": "17c68a1017bf6e8199d1fb521ecb49196d4dc6dc39c8f8cb7fd3f5a65bb08880"
+  },
+  "binary_sha256": {
+    "dg_acceptance": "783f90a79c85957ac3d3dd3aad5423c577a3d60dd4230d9c6935e4f4f96b0013",
+    "dg_original_regression": "22e3ebe637f90a41b656b56165b705afe265395371d46d3da867d74529b9c1b0"
+  },
+  "build_seconds": 6.042349207913503,
+  "reused_build": false,
+  "log": "<PROJECT_ROOT>/fno_acceptance_v1/reference_solver/build/build_ccee753eb3084360aac6a9240609b855.log",
+  "threads": 1
+}

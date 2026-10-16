@@ -1,0 +1,105 @@
+{
+  "identity": {
+    "config_sha256": "c02e546db5a12bae294ec933d797a0ba3095641cd2038c728565369628b8d8b5",
+    "sources": {
+      "config.json": "d558519ca566bb0935dda062a2006e821d09020116ca2ece3a26af43a558f834",
+      "README.md": "5eaee5cc2fa4680d7d2bd588f4048e89dd3a14a9e0368bfdf0901fd96da63ce4",
+      "run_case.py": "8e9cb309440e02002b387956bb84bf39d39ede747bf64a9cc602c3463d420b8c",
+      "prepare_solver.py": "526a5ef4eacfa017e00a313a64cd3b24af255818d9b197fa98cbb3825907c871",
+      "src/dataset_driver.cpp": "836dc69d3d2ce4830f6f362c0e528b6cbe6f81863b9348ea8fc53d1241d90555",
+      "src/cole_cole.cpp": "12d000f4a2edbb5ee5fb6cbc781148c7d78a9d37376b3ab5516915329133b309",
+      "include/cole_cole.hpp": "848b8993027575e9b34ea9cfcbdee8511c78e56d90a93e7b0a35ff769f2569ff",
+      "CMakeLists.txt": "a94bb609951ba76d69e01ffe9ffde5a48b24d46b65917021d4f85f0f565576dc",
+      "data/dataset.npz": "a0bc9598eb028ff63c3eceafd5ebefb956591849c654257b2caebc00f3e24f96",
+      "fno_training/model.py": "3e991e9a154d12cb8d616bdbf8e5cc804d97203f689ce905bc7670900e4ee99a",
+      "fno_training/data.py": "e64d01c36c26196dc8884f31a34f0689703613c051d91b9ff308cd7d357018c3",
+      "fno_training/utils.py": "c8afbfc9defb20908cb344486c4f3b09566681dba842e033a2318f89d9a39ef4",
+      "fno_training/predict_fno.py": "c3f358a406e0650736c39b9b1973cfc8d1088278f9319f03aaab1501a371ffea",
+      "fno_training/evaluate_fno.py": "bbbbc3412bc8cd0e8639e018f8d419c68a94b52ceacb6c83019aaf6510460224",
+      "fno_training/prepared/normalizer.json": "1622606f591e468c439c44bf40ec68ea4869404ea2aba7fb71351b382cb94dc9",
+      "fno_training/prepared/prepared.npz": "09002c12d20df7c8538d78229daac6fb6c8d7f2866bb395698efce0c98fe87b9",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/experiment.json": "ec7240bdd1621105827281625b83dd39375b64300559e5ec0bf3f911d2ad5551",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/completion.json": "f0d5c9a2fa21b320b85bfaf695730af3541708445bb33001e37f90263ab15a42",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/config.json": "03ee498808961997343927ed13d991266c489b46ec56524c6fdda2d359083328",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/protocol.json": "e2717cf899ed8b3642ec3cee5c62bfa06bb593a485c88e25fdb3244f82623748",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/normalizer.json": "1622606f591e468c439c44bf40ec68ea4869404ea2aba7fb71351b382cb94dc9",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/best_validation_predictions.npz": "89fed4e9b318064eb7ff715411bb66961be6c3b4268fe4e8e7c27fbe8d44ff20",
+      "fno_training/controlled_finetune/runs/finetune_A_20260924_134440_155680_f9a10edb/best_validation.json": "1d9172139bbd898d855b693f1709df73ea8d49541c816546be03f98786cc592c",
+      "checkpoint": "f7ddd5f2517487935441aa1dd50e8a465212a7e4ca21ee3e17cf09f155f504f9"
+    },
+    "implementation": {
+      "acceptance_common.py": "86687f8ef28a9b9bb957ffb60f41233179baadcbe4ab09d41a62dd042ef3dba0",
+      "benchmark_acceptance.py": "45c81b3ffd5470f6bfda21b705eb799c6a75c4ad5bea8c192509eb47c4ca1c8d",
+      "dg_adapter.py": "6439ee53ac184a6908bc4972ac15a2b98b03b3c9e28b2407c39a5158daea2831",
+      "frozen_predictor.py": "e3f3a2cee8ee2c35552e803300ca6dc8d1d3adc7f2f4bc2517f2ac601b1c7071",
+      "initial_conditions.py": "6173354d0cab4766484d036276317824b6ce6397bacd7605d29e2cccfda061c0",
+      "metrics_report.py": "f3802b62215b7c2ff23ca11f72ddf60a9cddb25a134840a7688d17406beb1cba",
+      "reference_solver/CMakeLists.txt": "f30b905390fbdd225910f9c5ebe4bdcc1894d27d1a6bad53714927d7fad56b6d",
+      "reference_solver/include/cole_cole.hpp": "e8f0b0858851d23685f3d912b126dc4b2b9171bd3644c56f36fd5448f3927020",
+      "reference_solver/original/CMakeLists.txt": "a94bb609951ba76d69e01ffe9ffde5a48b24d46b65917021d4f85f0f565576dc",
+      "reference_solver/original/include/cole_cole.hpp": "848b8993027575e9b34ea9cfcbdee8511c78e56d90a93e7b0a35ff769f2569ff",
+      "reference_solver/original/src/cole_cole.cpp": "12d000f4a2edbb5ee5fb6cbc781148c7d78a9d37376b3ab5516915329133b309",
+      "reference_solver/original/src/dataset_driver.cpp": "836dc69d3d2ce4830f6f362c0e528b6cbe6f81863b9348ea8fc53d1241d90555",
+      "reference_solver/source_manifest.json": "d19adbc8e470244eb07ea913ba603419cfabf554cff294d9bb8be631621308eb",
+      "reference_solver/src/acceptance_driver.cpp": "07e0776681662744aa8db56c717c12e1e6c0abb79c1eb9e43c54ebe6727a3c4d",
+      "reference_solver/src/cole_cole.cpp": "17c68a1017bf6e8199d1fb521ecb49196d4dc6dc39c8f8cb7fd3f5a65bb08880",
+      "run_acceptance.py": "81c18ad5bc136d01752c58b5326a38d887ad88301628381f9d1d29640552842f"
+    }
+  },
+  "checkpoint": {
+    "sha256": "f7ddd5f2517487935441aa1dd50e8a465212a7e4ca21ee3e17cf09f155f504f9",
+    "epoch": 176,
+    "fine_tune_step": 4224,
+    "source_epoch": 2478,
+    "device": "cpu",
+    "threads": 1,
+    "regression_count": 4,
+    "regression_rtol": 1e-05,
+    "regression_atol_scale_factor": 2e-06
+  },
+  "physics": {
+    "L": 6.283185307179586,
+    "epsilon_b": 2.0,
+    "mu": 1.0,
+    "delta_epsilon": 1.0,
+    "T": 1.0,
+    "P0": 0.0,
+    "history_before_t0": "zero",
+    "points": 65,
+    "boundary": "PEC",
+    "source_free": true
+  },
+  "acceptance": {
+    "relative_zero_factor": 1e-10,
+    "weak_field_factor": 0.1,
+    "field_mean_relative_limit": 0.02,
+    "joint_relative_limit": 0.05,
+    "joint_min_fraction": 0.9,
+    "planned_per_group": 16,
+    "thresholds": [
+      0.01,
+      0.02,
+      0.05
+    ],
+    "refinement_abs_factor": 0.0001,
+    "refinement_rel_factor": 0.002
+  },
+  "design_seed": 20260925,
+  "scope": "2x2 paired 64-case screening; thresholds chosen before prediction; no training",
+  "reference_quality": "sampled spatial/time refinement self-consistency, not an error bound",
+  "timing": {
+    "fno_warmups": 20,
+    "fno_repeats_per_group": 200,
+    "dg_repeats_per_cache_mode": 3,
+    "cache_modes": [
+      "cache_hit",
+      "cache_miss"
+    ],
+    "settings": [
+      "baseline",
+      "reference"
+    ],
+    "representatives_per_group": 2,
+    "reuse_saved_benchmark": true
+  }
+}

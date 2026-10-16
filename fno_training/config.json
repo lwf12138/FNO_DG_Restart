@@ -1,0 +1,55 @@
+{
+  "data": {
+    "raw_path": "../data/dataset.npz",
+    "raw_config_path": "../config.json",
+    "prepared_path": "prepared/prepared.npz",
+    "normalizer_path": "prepared/normalizer.json",
+    "target_time": 1.0,
+    "time_atol": 1e-12,
+    "zero_tolerance": 1e-12,
+    "grid_atol": 1e-10
+  },
+  "model": {
+    "in_channels": 5,
+    "out_channels": 3,
+    "hidden_channels": 32,
+    "n_layers": 4,
+    "n_modes": [16],
+    "positional_embedding": null,
+    "factorization": null,
+    "norm": null,
+    "activation": "gelu",
+    "precision": "float32",
+    "domain_padding": 0.125,
+    "use_channel_mlp": true,
+    "channel_mlp_expansion": 0.5,
+    "channel_mlp_dropout": 0.0,
+    "channel_mlp_skip": "soft-gating",
+    "fno_skip": "linear",
+    "lifting_channel_ratio": 2,
+    "projection_channel_ratio": 2,
+    "implementation": "reconstructed",
+    "fno_block_precision": "full"
+  },
+  "training": {
+    "device": "cpu",
+    "batch_size": 16,
+    "epochs": 2500,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "num_workers": 0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 15,
+    "min_learning_rate": 1e-6,
+    "early_stopping_patience": 400,
+    "early_stopping_min_delta": 0.0
+  },
+  "evaluation": {
+    "batch_size": 32,
+    "relative_norm_threshold": 1e-10
+  },
+  "paths": {"results_dir": "results"},
+  "checkpoint_path": "results/train_20260924_113257_358844_8e2e9296/best.pt",
+  "prediction_input_path": null
+}

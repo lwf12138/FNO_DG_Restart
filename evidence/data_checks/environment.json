@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "python_executable": "<USER_HOME>/Desktop/\u8d44\u6599/graduate_student/\u535a/AI4S_ColeCole_FNO_round2/.venv/bin/python",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "machine": "arm64",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)"
+}

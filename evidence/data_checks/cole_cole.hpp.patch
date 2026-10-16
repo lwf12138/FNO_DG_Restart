@@ -1,0 +1,11 @@
+--- base_double/include/cole_cole.hpp
++++ include/cole_cole.hpp
+@@ -51,6 +51,8 @@
+ };
+ 
+ struct Config {
++    bool sourceFree = false;
++    Vec initialElectricCoeffs, initialMagneticCoeffs;
+     Vec queryTimes; // Output only; does not enter the numerical scheme.
+     Real epsilon0 = 1;
+     Real mu0 = 1;

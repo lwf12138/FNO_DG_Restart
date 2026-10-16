@@ -1,0 +1,12 @@
+--- original/include/cole_cole.hpp
++++ acceptance/include/cole_cole.hpp
+@@ -52,6 +52,9 @@
+ 
+ struct Config {
+     bool sourceFree = false;
++    // Acceptance adapter: complete [field, cell, monic-Legendre-mode] coefficients.
++    bool useInitialModalCoefficients = false;
++    Vec initialModalCoefficients;
+     Vec initialElectricCoeffs, initialMagneticCoeffs;
+     Vec queryTimes; // Output only; does not enter the numerical scheme.
+     Real epsilon0 = 1;

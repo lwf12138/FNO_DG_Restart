@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "sample_count": 512,
+  "shape": [
+    512,
+    11,
+    3,
+    65
+  ],
+  "split": {
+    "train": {
+      "samples": 384,
+      "materials": 48
+    },
+    "validation": {
+      "samples": 64,
+      "materials": 8
+    },
+    "test": {
+      "samples": 64,
+      "materials": 8
+    }
+  },
+  "checks": {
+    "stored_config_matches": true,
+    "source_hashes_match": true,
+    "dataset_hash_matches_previous_audit": true,
+    "raw_csv_matches_npz": true,
+    "raw_metadata_matches_inputs": true,
+    "raw_coefficients_finite": true,
+    "run_identity_matches_sources": true,
+    "distinct_raw_solution_count": 512,
+    "no_material_split_overlap": true,
+    "every_material_has_eight_samples": true,
+    "every_material_in_one_split": true,
+    "all_sample_ids_unique": true,
+    "all_full_inputs_unique": true,
+    "all_initial_conditions_unique": true,
+    "physical_arrays_finite": true,
+    "zero_reference_mask_consistent": true,
+    "saved_tolerances_correct": true,
+    "all_errors_pass_tolerance": true,
+    "saved_pass_flags_correct": true,
+    "dg_initial_matches_first_frame": true,
+    "continuous_initial_condition_max_difference": 6.106226635438361e-16,
+    "initial_P_is_zero": true,
+    "seed_reproduces_coefficients": true,
+    "seed_reproduces_splits": true
+  },
+  "max_absolute_L2": [
+    2.9517734836661553e-06,
+    4.0840536791601695e-06,
+    1.828490458380681e-06
+  ],
+  "max_relative_L2_percent": [
+    0.006038143613234451,
+    0.006285218728806829,
+    0.0057110193564125595
+  ],
+  "undefined_relative_entries": 512,
+  "convex_hull_coverage_alpha_log_tau": {
+    "validation": {
+      "outside_train_convex_hull_groups": 3,
+      "outside_pairs": [
+        [
+          0.3,
+          2.0
+        ],
+        [
+          0.7,
+          1.6406707120152757
+        ],
+        [
+          0.7,
+          2.0
+        ]
+      ]
+    },
+    "test": {
+      "outside_train_convex_hull_groups": 0,
+      "outside_pairs": []
+    }
+  },
+  "interpretation": "Suitable for a first FNO baseline within the documented material/three-mode-initial-condition family; not evidence of arbitrary-input or out-of-range generalization.",
+  "dataset_sha256": "a0bc9598eb028ff63c3eceafd5ebefb956591849c654257b2caebc00f3e24f96",
+  "data_modified": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "completed_updates": 4800,
+  "planned_updates": 4800,
+  "best_step": 4152,
+  "best_validation_score": 0.010047349207859187,
+  "best_validation_metric": "macro_mean_relative_l2",
+  "train_order_sha256": "1da940c775d8b21b3b00fe897ced57de522ce011eda6a4c71d8e9413c310920b",
+  "lr_sequence_sha256": "e82a2c6d26f47d2c0eb0be64e1c7aea1eb09fe72187ad111fa7962b663012863",
+  "test_evaluated": false,
+  "resumable": false,
+  "source_checkpoint_unchanged": true
+}

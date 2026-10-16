@@ -1,0 +1,8 @@
+{
+  "archive": "<PROJECT_ROOT>_archive_20260923_162543",
+  "base_double_sha256": {
+    "include/cole_cole.hpp": "4df0a3124e5d136b72cbf48033fd6aa315c58f0aae1692d30af7845d340e91ae",
+    "src/cole_cole.cpp": "fbf41b08d6a1a2110a0117c214a1ae47717e6f1eaf7b9959c4cf1ae56a753bfd"
+  },
+  "old_labels_reused": false
+}

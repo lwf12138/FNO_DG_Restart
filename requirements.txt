@@ -1,0 +1,9 @@
+# Python 3.12; direct dependencies for the CPU release path.
+torch==2.8.0
+neuraloperator==2.0.0
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+tensorly==0.9.0
+tensorly-torch==0.5.0
+mpmath==1.3.0

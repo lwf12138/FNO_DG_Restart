@@ -1,0 +1,9 @@
+*.png binary
+# Preserve exact bytes: frozen source/data hashes must survive a Git checkout.
+* -text
+*.csv whitespace=cr-at-eol
+# Unified-diff evidence contains significant blank context lines.
+*.patch -whitespace
+*.npz binary
+*.pt binary
+*.f64 binary

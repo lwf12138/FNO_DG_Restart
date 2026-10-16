@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "actual_samples": 512,
+  "checked_frame_field_errors": 16896,
+  "metadata_matches_manifest": true,
+  "npz_matches_all_raw_csv": true,
+  "all_raw_coefficients_finite": true,
+  "distinct_raw_solution_hashes": 512,
+  "seed_reproduced": true,
+  "source_provenance_matches": true,
+  "dataset_sha256": "a0bc9598eb028ff63c3eceafd5ebefb956591849c654257b2caebc00f3e24f96"
+}

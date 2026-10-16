@@ -1,0 +1,341 @@
+{
+  "operation": "evaluation",
+  "checkpoint": "<PROJECT_ROOT>/fno_training/results/train_20260924_113257_358844_8e2e9296/best.pt",
+  "checkpoint_sha256": "66b6c4bc9e596c7dc717e30baad34997551f0a89fdb2d37ab639a6bef066ff12",
+  "checkpoint_epoch": 2478,
+  "best_validation_loss": 4.979411187377991e-05,
+  "split": "test",
+  "sample_count": 64,
+  "batch_size": 32,
+  "field_order": [
+    "E",
+    "H",
+    "P"
+  ],
+  "model_config": {
+    "in_channels": 5,
+    "out_channels": 3,
+    "hidden_channels": 32,
+    "n_layers": 4,
+    "n_modes": [
+      16
+    ],
+    "positional_embedding": null,
+    "factorization": null,
+    "norm": null,
+    "activation": "gelu",
+    "precision": "float32",
+    "domain_padding": 0.125,
+    "use_channel_mlp": true,
+    "channel_mlp_expansion": 0.5,
+    "channel_mlp_dropout": 0.0,
+    "channel_mlp_skip": "soft-gating",
+    "fno_skip": "linear",
+    "lifting_channel_ratio": 2,
+    "projection_channel_ratio": 2,
+    "implementation": "reconstructed",
+    "fno_block_precision": "full"
+  },
+  "protocol": {
+    "schema_version": 1,
+    "target_time": 1.0,
+    "input_channels": [
+      "E0_scaled",
+      "H0_scaled",
+      "alpha_scaled",
+      "log_tau_scaled",
+      "x_scaled"
+    ],
+    "output_channels": [
+      "E_T_scaled",
+      "H_T_scaled",
+      "P_T_scaled"
+    ],
+    "x": [
+      0.0,
+      0.09817477042468103,
+      0.19634954084936207,
+      0.2945243112740431,
+      0.39269908169872414,
+      0.4908738521234052,
+      0.5890486225480862,
+      0.6872233929727672,
+      0.7853981633974483,
+      0.8835729338221293,
+      0.9817477042468103,
+      1.0799224746714913,
+      1.1780972450961724,
+      1.2762720155208536,
+      1.3744467859455345,
+      1.4726215563702154,
+      1.5707963267948966,
+      1.6689710972195777,
+      1.7671458676442586,
+      1.8653206380689396,
+      1.9634954084936207,
+      2.061670178918302,
+      2.1598449493429825,
+      2.2580197197676637,
+      2.356194490192345,
+      2.454369260617026,
+      2.552544031041707,
+      2.650718801466388,
+      2.748893571891069,
+      2.84706834231575,
+      2.945243112740431,
+      3.043417883165112,
+      3.141592653589793,
+      3.2397674240144743,
+      3.3379421944391554,
+      3.436116964863836,
+      3.5342917352885173,
+      3.6324665057131984,
+      3.730641276137879,
+      3.8288160465625602,
+      3.9269908169872414,
+      4.025165587411922,
+      4.123340357836604,
+      4.221515128261284,
+      4.319689898685965,
+      4.417864669110647,
+      4.516039439535327,
+      4.614214209960009,
+      4.71238898038469,
+      4.81056375080937,
+      4.908738521234052,
+      5.006913291658733,
+      5.105088062083414,
+      5.203262832508095,
+      5.301437602932776,
+      5.399612373357457,
+      5.497787143782138,
+      5.595961914206819,
+      5.6941366846315,
+      5.792311455056181,
+      5.890486225480862,
+      5.988660995905543,
+      6.086835766330224,
+      6.1850105367549055,
+      6.283185307179586
+    ],
+    "parameter_ranges": {
+      "alpha": [
+        0.3,
+        0.7
+      ],
+      "log_tau": [
+        -0.6931471805599453,
+        0.6931471805599453
+      ],
+      "x": [
+        0.0,
+        6.283185307179586
+      ]
+    },
+    "field_normalization": "train_global_weighted_rms_no_center",
+    "scalar_mapping": "affine_to_minus_one_plus_one",
+    "initial_memory": {
+      "P0": 0.0,
+      "history_before_t0": "zero"
+    },
+    "initial_boundary": {
+      "E0": "PEC endpoints",
+      "H0": "no zero-endpoint constraint",
+      "absolute_tolerance": 1e-12
+    },
+    "grid_atol": 1e-10
+  },
+  "data_fingerprints": {
+    "raw_sha256": "a0bc9598eb028ff63c3eceafd5ebefb956591849c654257b2caebc00f3e24f96",
+    "split_sha256": "87216c68529b4918875c9762e4db4a5fdc9e95cca7e7a21104d97ef522b6d373",
+    "raw_config_sha256": "d558519ca566bb0935dda062a2006e821d09020116ca2ece3a26af43a558f834",
+    "prepared_sha256": "09002c12d20df7c8538d78229daac6fb6c8d7f2866bb395698efce0c98fe87b9",
+    "normalizer_sha256": "1622606f591e468c439c44bf40ec68ea4869404ea2aba7fb71351b382cb94dc9"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.0.2",
+    "torch": "2.8.0",
+    "device": "cpu"
+  },
+  "metrics": {
+    "relative_norm_threshold": 1e-10,
+    "relative_error_definition": "absolute L2 / reference L2 when reference L2 > threshold",
+    "relative_error_units": "fraction (multiply by 100 for percent)",
+    "quadrature": "supplied physical weights; dx is not multiplied a second time",
+    "metric_scope": "weighted discrete field errors on the current 65-point grid; not cellwise Gauss, flux, or superconvergence errors",
+    "per_field": {
+      "E": {
+        "absolute_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.003355980374457703,
+          "median": 0.0030633114179149127,
+          "p95": 0.006158269264968605,
+          "max": 0.008535122486558645
+        },
+        "relative_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.005967506705863716,
+          "median": 0.003693510534032483,
+          "p95": 0.016076757622233814,
+          "max": 0.02618917443029355
+        },
+        "reference_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.7879559147274777,
+          "median": 0.8120332317601731,
+          "p95": 1.315153293598901,
+          "max": 1.5642903436753355
+        },
+        "absolute_boundary_error_against_dg": {
+          "left": {
+            "total_count": 64,
+            "valid_count": 64,
+            "undefined_count": 0,
+            "mean": 0.0017845654448364022,
+            "median": 0.0016616924405552492,
+            "p95": 0.0038769508444998378,
+            "max": 0.005515569037262745
+          },
+          "right": {
+            "total_count": 64,
+            "valid_count": 64,
+            "undefined_count": 0,
+            "mean": 0.001842153395880927,
+            "median": 0.0016030224947127408,
+            "p95": 0.004225706781229487,
+            "max": 0.007630730591837786
+          }
+        }
+      },
+      "H": {
+        "absolute_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.005002245398548226,
+          "median": 0.004604026720051205,
+          "p95": 0.00892567197725582,
+          "max": 0.013003553068403876
+        },
+        "relative_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.008720398798300201,
+          "median": 0.005977082417230504,
+          "p95": 0.022187587410254842,
+          "max": 0.03966676323862762
+        },
+        "reference_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.8552555051243879,
+          "median": 0.7450880325545653,
+          "p95": 1.8961628466086033,
+          "max": 2.1944086727025756
+        },
+        "absolute_boundary_error_against_dg": {
+          "left": {
+            "total_count": 64,
+            "valid_count": 64,
+            "undefined_count": 0,
+            "mean": 0.003071568652991445,
+            "median": 0.0020064376834324493,
+            "p95": 0.009212779690397176,
+            "max": 0.01913323694985336
+          },
+          "right": {
+            "total_count": 64,
+            "valid_count": 64,
+            "undefined_count": 0,
+            "mean": 0.003180661433598352,
+            "median": 0.0019929256448337485,
+            "p95": 0.008138452766035776,
+            "max": 0.010405913410811873
+          }
+        }
+      },
+      "P": {
+        "absolute_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.0021534158837542196,
+          "median": 0.001966825513519078,
+          "p95": 0.004122979020207713,
+          "max": 0.004801159779478911
+        },
+        "relative_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.005964525059376325,
+          "median": 0.00471438641239011,
+          "p95": 0.01551054816880419,
+          "max": 0.021295404760802616
+        },
+        "reference_l2": {
+          "total_count": 64,
+          "valid_count": 64,
+          "undefined_count": 0,
+          "mean": 0.4664183749865529,
+          "median": 0.5129729275108331,
+          "p95": 0.7736074688018438,
+          "max": 0.8111421320701176
+        },
+        "absolute_boundary_error_against_dg": {
+          "left": {
+            "total_count": 64,
+            "valid_count": 64,
+            "undefined_count": 0,
+            "mean": 0.0009897652967823737,
+            "median": 0.0009024119732260072,
+            "p95": 0.0023620767027039023,
+            "max": 0.0040481136472451315
+          },
+          "right": {
+            "total_count": 64,
+            "valid_count": 64,
+            "undefined_count": 0,
+            "mean": 0.0009770100959066953,
+            "median": 0.000751275240633676,
+            "p95": 0.00248283708565697,
+            "max": 0.004443430643462999
+          }
+        }
+      }
+    },
+    "absolute_e_zero_boundary_residual": {
+      "left": {
+        "total_count": 64,
+        "valid_count": 64,
+        "undefined_count": 0,
+        "mean": 0.0017846062234907938,
+        "median": 0.001661217674034463,
+        "p95": 0.003877895870358434,
+        "max": 0.005515976477318148
+      },
+      "right": {
+        "total_count": 64,
+        "valid_count": 64,
+        "undefined_count": 0,
+        "mean": 0.0018418157109072358,
+        "median": 0.0016022001048924873,
+        "p95": 0.004224572242708737,
+        "max": 0.0076271809208504834
+      }
+    }
+  },
+  "boundary_csv_convention": "signed prediction-DG error; signed E prediction for physical zero boundary residual",
+  "undefined_relative_csv_convention": "empty relative_l2 and relative_defined=0",
+  "interpretation": "This split was explicitly selected for evaluation; no model selection or training occurs here."
+}

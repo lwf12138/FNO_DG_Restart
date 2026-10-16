@@ -1,0 +1,107 @@
+{
+  "step": 4800,
+  "metrics": {
+    "sample_count": 64,
+    "mse": 4.7250148820138995e-05,
+    "mixed_loss": 9.163089123497777e-05,
+    "mix_lambda": 0.5,
+    "delta_normalized": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "macro_mean_relative_l2": 0.010072653753312488,
+    "fields": {
+      "E": {
+        "absolute_l2": {
+          "mean": 0.004259432056168319,
+          "median": 0.0038609896069656505,
+          "p95": 0.00813078511899414,
+          "max": 0.0119115302227747,
+          "defined_count": 64,
+          "undefined_count": 0
+        },
+        "relative_l2": {
+          "mean": 0.012085267097012718,
+          "median": 0.006683616070150076,
+          "p95": 0.03285138271323761,
+          "max": 0.1208252446359715,
+          "defined_count": 64,
+          "undefined_count": 0
+        },
+        "reference_l2": {
+          "mean": 0.6601645189938314,
+          "median": 0.6415555713989862,
+          "p95": 1.4297895262628701,
+          "max": 1.4813226081644735,
+          "defined_count": 64,
+          "undefined_count": 0
+        }
+      },
+      "H": {
+        "absolute_l2": {
+          "mean": 0.0063012616469625814,
+          "median": 0.005670306397319261,
+          "p95": 0.011351694794030516,
+          "max": 0.012807439514914525,
+          "defined_count": 64,
+          "undefined_count": 0
+        },
+        "relative_l2": {
+          "mean": 0.006329945568747905,
+          "median": 0.005404209692154764,
+          "p95": 0.013235571225443797,
+          "max": 0.01723871258850514,
+          "defined_count": 64,
+          "undefined_count": 0
+        },
+        "reference_l2": {
+          "mean": 1.1230482779243678,
+          "median": 1.0087660768167126,
+          "p95": 1.9938004055664642,
+          "max": 2.0932180153023525,
+          "defined_count": 64,
+          "undefined_count": 0
+        }
+      },
+      "P": {
+        "absolute_l2": {
+          "mean": 0.0031276054484785584,
+          "median": 0.002426753755319219,
+          "p95": 0.006673054218808111,
+          "max": 0.01462822195928739,
+          "defined_count": 64,
+          "undefined_count": 0
+        },
+        "relative_l2": {
+          "mean": 0.011802748594176841,
+          "median": 0.009144326682354292,
+          "p95": 0.03134389467983124,
+          "max": 0.04205263775907179,
+          "defined_count": 64,
+          "undefined_count": 0
+        },
+        "reference_l2": {
+          "mean": 0.3695066407092568,
+          "median": 0.35108182563139795,
+          "p95": 0.6902236362836459,
+          "max": 0.8122608093837977,
+          "defined_count": 64,
+          "undefined_count": 0
+        }
+      }
+    },
+    "joint_relative_le_1pct": {
+      "pass_count": 30,
+      "total_count": 64,
+      "undefined_count": 0,
+      "fraction_all": 0.46875
+    },
+    "relative_norm_threshold": 1e-10,
+    "relative_error_definition": "physical absolute L2 / physical target L2; no delta",
+    "relative_error_units": "fraction; multiply by 100 for percent",
+    "common_metric_definition": "equal mean of E/H/P per-field mean true relative L2",
+    "quadrature": "supplied spatial weights already include dx",
+    "metric_scope": "weighted discrete field errors on the saved sample grid"
+  }
+}

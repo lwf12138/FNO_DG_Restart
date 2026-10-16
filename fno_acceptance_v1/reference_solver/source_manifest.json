@@ -1,0 +1,9 @@
+{
+  "original_project_files_sha256": {
+    "include/cole_cole.hpp": "848b8993027575e9b34ea9cfcbdee8511c78e56d90a93e7b0a35ff769f2569ff",
+    "src/cole_cole.cpp": "12d000f4a2edbb5ee5fb6cbc781148c7d78a9d37376b3ab5516915329133b309",
+    "src/dataset_driver.cpp": "836dc69d3d2ce4830f6f362c0e528b6cbe6f81863b9348ea8fc53d1241d90555",
+    "CMakeLists.txt": "a94bb609951ba76d69e01ffe9ffde5a48b24d46b65917021d4f85f0f565576dc"
+  },
+  "copy_method": "Byte-identical original snapshots; only new core/header branch patched. No source preparation was executed."
+}

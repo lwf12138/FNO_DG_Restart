@@ -1,0 +1,7 @@
+{
+  "stop_reason": "maximum_epochs",
+  "last_epoch": 2500,
+  "best_epoch": 2478,
+  "best_validation_loss": 4.979411187377991e-05,
+  "test_evaluated": false
+}

@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "actual_samples": 512,
+  "qualified_samples": 512,
+  "material_groups": 64,
+  "sample_split": {
+    "train": 384,
+    "validation": 64,
+    "test": 64
+  },
+  "material_split": {
+    "train": 48,
+    "validation": 8,
+    "test": 8
+  },
+  "shape": [
+    512,
+    11,
+    3,
+    65
+  ],
+  "max_absolute_l2_E_H_P": [
+    2.9517734836661553e-06,
+    4.0840536791601695e-06,
+    1.828490458380681e-06
+  ],
+  "max_relative_l2_E_H_P": [
+    6.038143613234451e-05,
+    6.285218728806829e-05,
+    5.71101935641256e-05
+  ],
+  "max_tolerance_ratio": 0.05966215406946452,
+  "worst_case": {
+    "sample_id": "sample_0213",
+    "time": 0.6,
+    "field": "H"
+  },
+  "all_physical_arrays_finite": true,
+  "unique_material_groups": true,
+  "repeated_material_rows_expected": 8,
+  "unique_full_inputs": true,
+  "unique_sample_ids": true,
+  "material_split_overlap": false,
+  "undefined_relative_errors": 512,
+  "undefined_relative_policy": "NaN only when exact L2 norm is zero; report absolute error",
+  "reference_max_evaluation_difference": 2.3703705664956942e-11,
+  "max_sampling_reconstruction_difference": 5.551115123125783e-16,
+  "batch_wall_seconds": 96.68820579210296,
+  "sum_solver_seconds": 188.665907574,
+  "source_hashes": {
+    "config.json": "d558519ca566bb0935dda062a2006e821d09020116ca2ece3a26af43a558f834",
+    "src/cole_cole.cpp": "12d000f4a2edbb5ee5fb6cbc781148c7d78a9d37376b3ab5516915329133b309",
+    "include/cole_cole.hpp": "848b8993027575e9b34ea9cfcbdee8511c78e56d90a93e7b0a35ff769f2569ff",
+    "src/dataset_driver.cpp": "836dc69d3d2ce4830f6f362c0e528b6cbe6f81863b9348ea8fc53d1241d90555",
+    "reference/modal_reference.py": "5e7d26e76387e7d290fe73de3cfd019b288e2f0c2de2eed7da0bb7d05df5d72c",
+    "validation.py": "de6fb77f16406f849092977ae06676d5a5b1c2cb9081c0998aca28c0f61f1489",
+    "run_case.py": "8e9cb309440e02002b387956bb84bf39d39ede747bf64a9cc602c3463d420b8c",
+    "generate_dataset.py": "947112cb911f6299589fa2565dbb73d38f41761794f26e500f6e0c7078769717"
+  }
+}
